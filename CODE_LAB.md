@@ -107,10 +107,10 @@ python app.py
 
 | Feature | Basic | Advanced | Tại sao quan trọng? |
 |---------|-------|----------|---------------------|
-| Config | Hardcode | Env vars | ... |
-| Health check |  |  | ... |
-| Logging | print() | JSON | ... |
-| Shutdown | Đột ngột | Graceful | ... |
+| Config | Hardcode | Env vars | Bảo mật, tránh lộ API key. Linh hoạt, đổi config không cần sửa code. |
+| Health check |  |  | Giúp Cloud Platform tự restart nếu app treo và Load Balancer chỉ gửi request khi app đã sẵn sàng. |
+| Logging | print() | JSON | Dễ phân tích qua công cụ thu thập log. Tránh in thông tin nhạy cảm. |
+| Shutdown | Đột ngột | Graceful | Đảm bảo hoàn thành các request đang chạy và đóng kết nối an toàn để không mất dữ liệu. |
 
 ###  Checkpoint 1
 

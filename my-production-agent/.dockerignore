@@ -1,0 +1,34 @@
+# Exclude git
+.git
+.gitignore
+
+# Exclude python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Exclude env files and config
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Exclude IDE and workspace settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Exclude Docker files
+docker-compose.yml
+docker-compose.override.yml
+Dockerfile

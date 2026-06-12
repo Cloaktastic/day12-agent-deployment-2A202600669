@@ -40,12 +40,36 @@
 ## Part 4: API Security
 
 ### Exercise 4.1-4.3: Test results
-[Paste your test outputs]
+Key test 
+![alt text](key_test.png)
 
+Token test
+![alt text](access_token.png)  
+
+Rate test
+![alt text](rate_test.png)  
 ### Exercise 4.4: Cost guard implementation
-[Explain your approach]
+1. Lấy thông tin tiêu dùng trong ngày: Gọi _get_record(user_id) để lấy bản ghi chi phí đã sử dụng trong ngày hôm nay của user.
+2. Kiểm tra ngân sách hệ thống (Global Budget): Nếu tổng chi phí của toàn hệ thống (_global_cost) vượt quá giới hạn ngày, chặn request và trả về lỗi 503 Service Unavailable.
+3. Kiểm tra ngân sách cá nhân (User Budget): Nếu chi phí của riêng user đó (total_cost_usd) vượt quá giới hạn ngày, chặn request và trả về lỗi 402 Payment Required.
+4. Cảnh báo khi sắp hết: Nếu chi phí đã dùng đạt ngưỡng cảnh báo (ví dụ: 80% hạn mức), ghi nhận log warning để thông báo.
 
 ## Part 5: Scaling & Reliability
 
 ### Exercise 5.1-5.5: Implementation notes
-[Your explanations and test results]
+- 5.1 /health: Kiểm tra ứng dụng có chạy bth không hây bị treo bằng cách tính thời gian uptime và ram sũ dụng.    
+/ready: kiểm tra ứng đụng có sãn sàng chưa, nếu chưa trả 503.
+
+- 5.2 
+Graceful shutdown test success
+![alt text](graceful_shutdown.png)
+
+- 5.4
+Ran load balancer test  
+
+![alt text](load_balancer.png)
+
+- 5.5 
+Ran Stateless test
+
+![alt text](Stateless_test.png)

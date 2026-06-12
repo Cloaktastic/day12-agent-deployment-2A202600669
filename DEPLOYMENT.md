@@ -29,6 +29,6 @@ curl -X POST https://my-projct-production-ac3d.up.railway.app/ask \
 - LOG_LEVEL
 
 ## Screenshots
-- [Deployment dashboard](screenshots/dashboard.png)
-- [Service running](screenshots/running.png)
-- [Test results](screenshots/test.png)
+- [Deployment dashboard](screenshots/railway.png)
+- [Service running](screenshots/load_balancer.png)
+- [Test results](screenshots/rate_test.png)

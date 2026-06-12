@@ -36,18 +36,18 @@
 ### Exercise 3.1: Railway deployment
 - URL: https://my-projct-production-ac3d.up.railway.app
 - Screenshot:
-![alt text](railway.png)
+![alt text](screenshots/railway.png)
 ## Part 4: API Security
 
 ### Exercise 4.1-4.3: Test results
 Key test 
-![alt text](key_test.png)
+![alt text](screenshots/key_test.png)
 
 Token test
-![alt text](access_token.png)  
+![alt text](screenshots/access_token.png)  
 
 Rate test
-![alt text](rate_test.png)  
+![alt text](screenshots/rate_test.png)  
 ### Exercise 4.4: Cost guard implementation
 1. Lấy thông tin tiêu dùng trong ngày: Gọi _get_record(user_id) để lấy bản ghi chi phí đã sử dụng trong ngày hôm nay của user.
 2. Kiểm tra ngân sách hệ thống (Global Budget): Nếu tổng chi phí của toàn hệ thống (_global_cost) vượt quá giới hạn ngày, chặn request và trả về lỗi 503 Service Unavailable.
@@ -62,14 +62,14 @@ Rate test
 
 - 5.2 
 Graceful shutdown test success
-![alt text](graceful_shutdown.png)
+![alt text](screenshots/graceful_shutdown.png)
 
 - 5.4
 Ran load balancer test  
 
-![alt text](load_balancer.png)
+![alt text](screenshots/load_balancer.png)
 
 - 5.5 
 Ran Stateless test
 
-![alt text](Stateless_test.png)
+![alt text](screenshots/Stateless_test.png)
